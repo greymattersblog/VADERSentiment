@@ -15,14 +15,14 @@ This is basically the leimapapa version with a few changes:
 - polarity_scores = (text) => { arrow function changed to polarity_scores(text) { for compatibility with Google Apps Script
 
 Installation:
-'''HTML
+```HTML
 <script src="path/to/vader.js"></script>
-'''
+```
 
 Example usage:
-'''JavaScript
+```JavaScript
 const sent = new SentimentIntensityAnalyzer();
 
 console.log(sent.polarity_scores('Hello, world. I am terrible.'));
 // {neg: 0.508, neu: 0.492, pos: 0, compound: -0.4767}
-'''
+```
